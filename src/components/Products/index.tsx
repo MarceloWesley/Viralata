@@ -20,7 +20,7 @@ export function Products() {
           alt="Cachorro Fazendeiro"
         />
       </article>
-      <div className={styles.productContainer}>
+      <div id="produtos" className={styles.productContainer}>
         <div className={styles.productListContainer}>
           <ul>
             <li>
@@ -36,6 +36,7 @@ export function Products() {
                 className={styles.acessPlatform}
                 href="https://app.viralata.finance/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Acessar plataforma<span></span>
               </a>
@@ -43,6 +44,7 @@ export function Products() {
                 className={styles.urlLink}
                 href="https://app.viralata.finance/"
                 target="_blank"
+                rel="noreferrer"
               >
                 app.viralata.finance<span></span>
               </a>
@@ -62,6 +64,7 @@ export function Products() {
                 className={styles.acessAnticipated}
                 href="https://banco.viralata.finance/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Acesso antecipado<span></span>
               </a>
@@ -69,6 +72,7 @@ export function Products() {
                 className={styles.urlLink}
                 href="https://banco.viralata.finance/"
                 target="_blank"
+                rel="noreferrer"
               >
                 banco.viralata.finance<span></span>
               </a>
@@ -88,6 +92,7 @@ export function Products() {
                 className={styles.knowMore}
                 href="https://docs.viralata.finance/tokenomics/auro"
                 target="_blank"
+                rel="noreferrer"
               >
                 Saiba mais<span></span>
               </a>
@@ -95,6 +100,7 @@ export function Products() {
                 className={styles.urlLink}
                 href="https://docs.viralata.finance/tokenomics/auro"
                 target="_blank"
+                rel="noreferrer"
               >
                 docs.viralata.finance<span></span>
               </a>
@@ -113,6 +119,7 @@ export function Products() {
                 className={styles.knowMore}
                 href="https://docs.viralata.finance/tokenomics/reau"
                 target="_blank"
+                rel="noreferrer"
               >
                 Saiba mais<span></span>
               </a>
@@ -120,6 +127,7 @@ export function Products() {
                 className={styles.urlLink}
                 href="https://docs.viralata.finance/tokenomics/reau"
                 target="_blank"
+                rel="noreferrer"
               >
                 docs.viralata.finance<span></span>
               </a>

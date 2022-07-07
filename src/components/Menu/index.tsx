@@ -50,6 +50,7 @@ export function Menu() {
           style={{ transitionDelay: "0.3s" }}
           href="https://viralata-reau.medium.com/"
           target="_blank"
+          rel="noreferrer"
           className={!isMenuOpen ? styles.blog : styles.visible}
         >
           📝 Blog
@@ -59,6 +60,7 @@ export function Menu() {
           style={{ transitionDelay: "0.27s" }}
           href="https://app.viralata.finance/"
           target="_blank"
+          rel="noreferrer"
           className={!isMenuOpen ? styles.viralataSwap : styles.visible}
         >
           🔄 ViralataSwap
@@ -68,6 +70,7 @@ export function Menu() {
           style={{ transitionDelay: "0.24s" }}
           href="https://docs.viralata.finance/"
           target="_blank"
+          rel="noreferrer"
           className={!isMenuOpen ? styles.viralatopedia : styles.visible}
         >
           📘 Viralatopédia
@@ -77,6 +80,7 @@ export function Menu() {
           style={{ transitionDelay: "0.21s" }}
           href="https://www.facebook.com/br.viralata.finance"
           target="_blank"
+          rel="noreferrer"
           className={!isMenuOpen ? styles.facebook : styles.visible}
         >
           😀 Facebook
@@ -86,6 +90,7 @@ export function Menu() {
           style={{ transitionDelay: "0.18s" }}
           href="https://github.com/viralatafinance"
           target="_blank"
+          rel="noreferrer"
           className={!isMenuOpen ? styles.github : styles.visible}
         >
           &zwj;💻 GitHub
@@ -95,6 +100,7 @@ export function Menu() {
           style={{ transitionDelay: "0.15s" }}
           href="https://www.instagram.com/viralatabr_/"
           target="_blank"
+          rel="noreferrer"
           className={!isMenuOpen ? styles.instagram : styles.visible}
         >
           📷 Instagram
@@ -104,6 +110,7 @@ export function Menu() {
           style={{ transitionDelay: "0.12s" }}
           href="https://t.me/viralatafinance"
           target="_blank"
+          rel="noreferrer"
           className={!isMenuOpen ? styles.telegram : styles.visible}
         >
           💬 Telegram
@@ -113,6 +120,7 @@ export function Menu() {
           style={{ transitionDelay: "0.09s" }}
           href="https://twitter.com/viralatabr_"
           target="_blank"
+          rel="noreferrer"
           className={!isMenuOpen ? styles.Twitter : styles.visible}
         >
           🐦 Twitter
@@ -120,7 +128,7 @@ export function Menu() {
 
         <a
           style={{ transitionDelay: "0.06s" }}
-          href="/newsletter"
+          href="#"
           className={!isMenuOpen ? styles.newsletter : styles.visible}
         >
           📫 Newsletter
