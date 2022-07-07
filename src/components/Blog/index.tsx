@@ -6,7 +6,7 @@ export function Blog(){
          <h4>Leia-nos !</h4>
             <article className={styles.blogArticle}>
                 <h5>O que a palavra ‘obrigado’ tem a ver com a história do dinheiro?</h5>
-                <a href="https://viralata-reau.medium.com/o-que-a-palavra-obrigado-tem-a-ver-com-a-hist%C3%B3ria-do-dinheiro-37e68c85aff1" target="_blank">
+                <a href="https://viralata-reau.medium.com/o-que-a-palavra-obrigado-tem-a-ver-com-a-hist%C3%B3ria-do-dinheiro-37e68c85aff1" target="_blank" rel="noreferrer">
                     <picture className={styles.blogPicture}>
                         <source srcSet="https://d33wubrfki0l68.cloudfront.net/4ee6bbaab829e84210cfb4b9227e17497eac2bed/24161/assets/blog_post_obrigado.avif" type="image/avif" />
                         <source srcSet="https://d33wubrfki0l68.cloudfront.net/9d4d14de4072159d474a8aa5efc19da3fa3bf973/9c0b4/assets/blog_post_obrigado.jpg" type="image/jpeg" /> 

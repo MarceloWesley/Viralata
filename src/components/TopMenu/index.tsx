@@ -24,7 +24,7 @@ export function TopMenu() {
             alt=""
           />
         </a>
-        <a href="https://www.instagram.com/viralatabr_/" target="_blank">
+        <a href="https://www.instagram.com/viralatabr_/" target="_blank" rel="noreferrer">
           <img
             src="https://d33wubrfki0l68.cloudfront.net/8713a0f269f67fc9cd7eda2dd7c5b4f0dc4856a4/3c87d/assets/instagram.svg"
             alt=""
