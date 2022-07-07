@@ -1,0 +1,94 @@
+.nadsnsadkoa{
+     fill:#00f5c6
+}
+
+.nadsdaskp{
+    fill:#fff;
+}
+
+.nsksnpkads{
+    fill:#008cb4;
+}
+
+.square01{
+    animation: blinksquare 9s cubic-bezier(.68,-.55,.27,1.55) infinite;
+    animation-delay: .9s
+}
+
+.square02{
+    animation: blinksquare 9s cubic-bezier(.68,-.55,.27,1.55) infinite;
+    animation-delay: 2.2s
+}
+
+.square03{
+    animation: blinksquare 9s cubic-bezier(.68,-.55,.27,1.55) infinite;
+    animation-delay: 3s
+}
+
+.square04{
+    animation: blinksquare 9s cubic-bezier(.68,-.55,.27,1.55) infinite;
+    animation-delay: 1.8s
+}
+
+.square05{
+    animation: blinksquare 9s cubic-bezier(.68,-.55,.27,1.55) infinite;
+    animation-delay: 2s
+}
+
+.square06{
+    animation: blinksquare 9s cubic-bezier(.68,-.55,.27,1.55) infinite;
+    animation-delay: .4s
+}
+
+.square07{
+    animation: blinksquare 9s cubic-bezier(.68,-.55,.27,1.55) infinite;
+    animation-delay: .7s
+}
+
+.square08{
+    animation: blinksquare 9s cubic-bezier(.68,-.55,.27,1.55) infinite;
+    animation-delay: .1s
+}
+
+.square09{
+    animation: blinksquare 9s cubic-bezier(.68,-.55,.27,1.55) infinite;
+    animation-delay: 1.5s
+}
+
+
+@keyframes blinksquare {
+    0% {opacity: 1;}
+    20% {opacity: .4;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+ }
+
+ .intro_sec_svg_background_block {
+    display: unset;
+    position: absolute;
+    opacity: .04;
+    z-index: -1;
+    filter: blur(0.5rem);
+    width: 80vw;
+    height: unset;
+    top: -23vw;
+    left: -5vw;
+    right: unset;
+}
+
+.intro_sec_svg {
+    width: clamp(7rem,38vw,36rem);
+    margin-top: 2rem;
+}
+
+@media (max-width: 1200px){
+    .intro_sec_svg{
+        width: clamp(7rem,49vw,36rem);
+    }
+}
+
+@media (max-width: 900px){
+    .intro_sec_svg{
+        width: clamp(7rem,52vw,36rem);
+    }
+}

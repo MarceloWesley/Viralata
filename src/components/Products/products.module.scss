@@ -1,0 +1,194 @@
+.productsSection {
+  background-color: var(--c2);
+  background-image: url(https://d33wubrfki0l68.cloudfront.net/2ab27caff245babae0794acaae23964c13a96e9d/3f448/assets/white_dog_bg.webp);
+  background-image: -webkit-image-set(url(https://d33wubrfki0l68.cloudfront.net/2ab27caff245babae0794acaae23964c13a96e9d/3f448/assets/white_dog_bg.webp) 1x, url(https://d33wubrfki0l68.cloudfront.net/2ab27caff245babae0794acaae23964c13a96e9d/3f448/assets/white_dog_bg.webp) 1x);
+  background-position: 75% top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 70rem;
+  color: var(--c1);
+  overflow: hidden;
+  background-attachment: initial;
+  background-size: 100%;
+}
+
+.productsArticle {
+  width: clamp(15rem, 80vw, 28rem);
+  min-height: 62rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: right;
+
+  h6 {
+    font-size: clamp(5rem, 30vw, 11rem);
+    position: absolute;
+    left: 0rem;
+    top: -24rem;
+    font-family: Roboto Mono, sans-serif;
+    transform: rotate(-90deg);
+    transform-origin: 50% 210%;
+    letter-spacing: -5px;
+    z-index: 2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: clamp(7rem, 60vw, 12rem);
+      height: clamp(0.4rem, 3vw, 0.9rem);
+      background: var(--c1);
+      display: block;
+      left: 0.6rem;
+      bottom: 0;
+    }
+  }
+
+  p {
+    position: absolute;
+    right: 0;
+    top: clamp(2.5rem, 20vw, 4rem);
+    width: 16rem;
+    font-size: 1.2rem;
+    line-height: clamp(1.35em, 1.8vw, 1.6em);
+    z-index: 2;
+    font-family: Roboto Mono, sans-serif;
+  }
+
+  img {
+    position: absolute;
+    z-index: 0;
+    bottom: -4rem;
+    right: -21rem;
+    width: 39rem;
+    z-index: 1;
+    max-width: unset;
+  }
+}
+
+.productListContainer {
+  width: 100%;
+  background-color: var(--c2);
+  min-height: 50rem;
+  padding-top: 9rem;
+  position: relative;
+  background-image: linear-gradient(0deg, var(--c5), transparent 10rem);
+  border-radius: 0 0 13rem 13rem;
+
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem 8rem;
+    justify-content: center;
+    padding: 0;
+    width: clamp(13rem, 77vw, 52rem);
+    justify-content: space-between;
+
+    li {
+      .urlLink {
+        font-style: italic;
+        font-weight: 200;
+        margin-top: 0.8rem;
+        display: block;
+        font-size: 1.1rem;
+        opacity: 0.6;
+        text-decoration: none;
+        color: unset;
+        font-family: Roboto Mono, sans-serif;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      h3 {
+        font-family: Roboto Mono, sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+        div {
+          font-size: 1.5rem;
+          display: inline;
+          color: var(--c4);
+          padding-right: 1rem;
+        }
+      }
+
+      h4 {
+        font-size: 1rem;
+        line-height: 1.6em;
+        margin-top: 0.7rem;
+        letter-spacing: -0.02em;
+        font-weight: 400;
+        font-family: Roboto Mono, sans-serif;
+      }
+
+      .acessPlatform {
+        padding: clamp(0.7rem, 4vw, 0.8rem)
+          clamp(0.8rem, calc(20vw - 3rem), 1.3rem);
+        display: inline-block;
+        border: 1px solid var(--c4);
+        font-weight: 600;
+        font-size: 0.94rem;
+        user-select: none;
+        border-radius: 0.3rem;
+        text-decoration: none;
+        color: unset;
+        font-family: Roboto Mono, sans-serif;
+
+        &:hover {
+          transition: border-color 50ms ease;
+          border-color: #ddd;
+        }
+
+        &:hover span {
+          transition: transform 50ms ease;
+          transform: rotate(45deg) translate(0.1rem, -0.3rem);
+        }
+
+        span {
+          position: relative;
+          width: 0.3rem;
+          height: 0.3rem;
+          display: inline-block;
+          border-right: 2px solid var(--c4);
+          border-top: 2px solid var(--c4);
+          transform: rotate(45deg) translate(-0.1rem, -0.1rem);
+          margin: 0 0.2rem 0 clamp(0.6rem, 1vw, 1.2rem);
+          transition: transform 0.4s ease-in-out;
+        }
+      }
+
+      .acessAnticipated {
+        @extend .acessPlatform;
+      }
+      .knowMore {
+        @extend .acessPlatform;
+      }
+
+      .wait {
+        @extend .acessPlatform;
+        opacity: 0.4;
+        &:hover {
+          border-color: black;
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+
+  .openArmsDog {
+    margin: 4rem auto 0 auto;
+    display: block;
+    width: clamp(18rem, 90vw, 58rem);
+
+    img {
+      max-width: 100%;
+      user-select: none;
+      display: block;
+    }
+  }
+}

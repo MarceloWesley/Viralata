@@ -1,0 +1,51 @@
+.topMenuContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 3rem auto;
+  padding: 2rem;
+
+  .logoContainer {
+    width: 25%;
+  }
+
+  .languageContainer {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+
+    a {
+      text-decoration: none;
+      color: unset;
+      font-family: Roboto Mono, sans-serif;
+    }
+
+    a + a {
+      color: var(--c3);
+    }
+  }
+}
+
+.socialMediasContainer {
+  display: flex;
+  width: 8%;
+  gap: 1rem;
+
+  a {
+    transition: transform 50ms ease-in;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      background-color: transparent;
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}

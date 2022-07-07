@@ -1,0 +1,89 @@
+.menuContainer {
+  position: fixed;
+  bottom: clamp(2rem, 5vw, 4rem);
+  right: clamp(2rem, 5vw, 4rem);
+  z-index: 999;
+}
+
+.menuBt {
+  width: clamp(4rem, 5vw, 4.5rem);
+  height: clamp(4rem, 5vw, 4.5rem);
+  border: none;
+  background: var(--c1);
+  border-radius: 10rem;
+  cursor: pointer;
+  border: 3px solid var(--c3);
+  box-shadow: 0 0.3rem 0.5rem rgb(60 90 120 / 40%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(10rem) rotate(230deg) scale(.6);
+
+  &:active {
+    outline: 0;
+    transition: transform 50ms ease;
+    transform: scale(0.9) !important;
+  }
+}
+
+.menu {
+  position: absolute;
+  bottom: 5rem;
+  right: 0;
+  text-align: right;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1.4rem;
+  width: max-content;
+  display: inline-flex;
+  flex-flow: column wrap-reverse;
+  align-items: flex-end;
+  visibility: hidden;
+  gap: clamp(0.8rem, 3.5vw, 1rem);
+  align-items: flex-start;
+  justify-content: end;
+  top: -75vh;
+  font-family: Roboto Mono, monospace;
+
+  a {
+    font-size: clamp(0.8rem, 4.8vw, 0.85rem);
+    padding: clamp(0.2rem, 2vw, 0.5rem) clamp(0.9rem, 5vw, 1.2rem);
+    display: inline-block;
+    text-decoration: none;
+    background: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+    border: 1px solid #bce3f8;
+    border-bottom: unset;
+    box-shadow: 0 0.25rem 0 #bce3f8,
+      0 0.4rem 0.6rem -0.5rem rgb(60 90 120 / 40%);
+    font-weight: 900;
+    transition: transform 0.3s ease-out, opacity 0.2s ease, visibility 0.2s ease;
+    transform: translate(0.6rem, 0.4rem) scale(0.9);
+    transform-origin: bottom right;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  a.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.bone01 {
+  transition: transform 0.3s ease;
+  width: clamp(2rem, 2.5vw, 2.5rem);
+  position: absolute;
+}
+
+.bone02 {
+  transition: transform 0.3s ease;
+  width: clamp(2rem, 2.5vw, 2.5rem);
+  position: absolute;
+}
+
+.cls1 {
+  fill: #fff;
+}

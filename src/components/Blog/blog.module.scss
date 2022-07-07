@@ -1,0 +1,122 @@
+.blogSection {
+  background-color: var(--c4);
+  background-image: linear-gradient(var(--c4), #000);
+  padding: clamp(16rem, 65vw, 20rem) 0 0 0;
+  margin-top: -14rem;
+
+  h4 {
+    color: var(--c2);
+    text-align: center;
+    font-size: 4rem;
+    font-family: Roboto Mono, sans-serif;
+  }
+
+  .blogArticle {
+    width: clamp(13rem, 80vw, 42rem);
+    margin: 3rem auto;
+    font-family: Lato;
+
+    h5 {
+      font-size: clamp(1.4rem, 6.5vw, 1.6rem);
+      line-height: 1.3em;
+      margin-bottom: 1.8rem;
+      letter-spacing: 0.03em;
+      font-weight: 500;
+      color: var(--c2);
+      font-family: Lato, sans-serif;
+    }
+
+    .blogPicture {
+      max-width: 100%;
+      user-select: none;
+      display: block;
+      margin-bottom: 2rem;
+      border-radius: 0.4rem;
+
+      .blogImage {
+        max-width: 100%;
+        user-select: none;
+        display: block;
+      }
+    }
+
+    .blogParagraph {
+      font-size: clamp(1rem, 4vw, 1.1rem);
+      line-height: 1.65em;
+      text-align: justify;
+      font-weight: 300;
+      color: #bbb;
+      font-family: Lato, sans-serif;
+
+      a {
+        color: var(--c3);
+        padding: 0.15rem 0.4rem;
+        background-color: #112;
+        transition: background-color 0.1s ease;
+        text-decoration: none;
+
+        &:hover {
+          background-color: #223;
+        }
+      }
+    }
+  }
+
+  .divisor {
+    border-top: 1px solid var(--c1);
+    margin: 3.9rem 0;
+  }
+
+  .blog2Article {
+    @extend .blogArticle;
+
+    .blogPicture2 {
+      @extend .blogPicture;
+
+      img {
+        @extend .blogImage;
+      }
+    }
+
+    p {
+      @extend .blogParagraph;
+    }
+  }
+
+  .footer {
+    .backTop {
+      text-align: center;
+      display: block;
+      background: var(--c1);
+      padding: 0.8rem 0;
+      font-family: Roboto Mono, sans-serif;
+      text-decoration: none;
+      color: var(--c2);
+    }
+
+    .socialMedias {
+      display: flex;
+      justify-content: center;
+      margin: 6rem 0;
+
+      a {
+        display: inline-block;
+        width: 1.4rem;
+        height: 1.5rem;
+        padding: 0 0.7rem;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: transform 50ms ease-in;
+        }
+
+        img {
+          max-width: 100%;
+          user-select: none;
+          display: block;
+        }
+      }
+    }
+  }
+}

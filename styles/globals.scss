@@ -1,0 +1,38 @@
+
+:root {
+  --c1: #202c31;
+  --c2: #f8f8ff;
+  --c3: #00f4d2;
+  --c3a: #a2fff2;
+  --c4: #161a1b;
+  --c4-2: #1a2327;
+  --c5: #ffdc81;
+  --c5-2: #cee09e;
+}
+
+html{
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: var(--c1);
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--c3);
+  }
+  
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(32, 44, 49);
+
+}
