@@ -32,11 +32,11 @@
 
 .socialMediasContainer {
   display: flex;
-  width: 8%;
   gap: 1rem;
 
   a {
     transition: transform 50ms ease-in;
+    width: clamp(1rem,5vw,1.3rem);
 
     &:hover {
       transform: scale(1.1);
@@ -48,4 +48,25 @@
       border-radius: 5px;
     }
   }
+}
+
+
+@media (max-width: 870px){
+
+  .topMenuContainer{
+    .logoContainer {
+      width: 40%;
+    }
+  }
+ 
+}
+
+@media (max-width: 870px){
+
+  .topMenuContainer{
+    .logoContainer {
+      width: 30%;
+    }
+  }
+ 
 }

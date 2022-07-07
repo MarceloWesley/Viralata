@@ -10,8 +10,6 @@
   min-height: 70rem;
   color: var(--c1);
   overflow: hidden;
-  background-attachment: initial;
-  background-size: 100%;
 }
 
 .productsArticle {
@@ -49,7 +47,7 @@
     position: absolute;
     right: 0;
     top: clamp(2.5rem, 20vw, 4rem);
-    width: 16rem;
+    width: clamp(8.6rem,43vw,16rem);
     font-size: 1.2rem;
     line-height: clamp(1.35em, 1.8vw, 1.6em);
     z-index: 2;
@@ -60,7 +58,7 @@
     position: absolute;
     z-index: 0;
     bottom: -4rem;
-    right: -21rem;
+    right: -15rem;
     width: 39rem;
     z-index: 1;
     max-width: unset;
@@ -128,7 +126,7 @@
 
       .acessPlatform {
         padding: clamp(0.7rem, 4vw, 0.8rem)
-          clamp(0.8rem, calc(20vw - 3rem), 1.3rem);
+        clamp(0.8rem, calc(20vw - 3rem), 1.3rem);
         display: inline-block;
         border: 1px solid var(--c4);
         font-weight: 600;
@@ -189,6 +187,40 @@
       max-width: 100%;
       user-select: none;
       display: block;
+    }
+  }
+}
+
+
+@media (max-width: 850px){
+  .productListContainer{
+
+    ul{
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .productsArticle{
+    h6{
+      top: -19rem;
+    }
+  }
+}
+
+@media (max-width: 410px){
+  .productsArticle{
+    p{
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 388px){
+  .productsArticle{
+    h6{
+      top: -15rem;
     }
   }
 }

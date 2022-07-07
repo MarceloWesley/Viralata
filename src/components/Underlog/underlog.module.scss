@@ -5,13 +5,16 @@
 .articleContainer {
   overflow: hidden;
   display: flex;
-  height: 47rem;
+  //height: 47rem;
+  position: relative;
+
 
   div {
     background-color: var(--c4);
     right: 0;
     height: 100%;
     max-width: 50rem;
+    width: clamp(12rem,62vw,60rem);
     padding: calc(1.5rem + 4vw) calc(1.5rem + 4vw) clamp(9rem, 38vw, 21rem)
       calc(1.5rem + 4vw);
     font-size: 1.5rem;
@@ -20,7 +23,7 @@
       font-size: 3rem;
       margin-top: -0.5rem;
       color: var(--c2);
-      //padding: 0rem 16rem 0rem 1rem;
+      max-width: 47rem;
       font-family: Roboto Mono, sans-serif;
 
       strong {
@@ -50,21 +53,52 @@
     background-attachment: fixed;
     transform: translate3d(0, 0, 0);
     flex: 1;
-    z-index: 1;
-    overflow: hidden;
 
     picture {
-      //position: absolute;
+      position: absolute;
       z-index: -1;
-      height: auto;
+      top: -5%;
+      height: 110%;
       object-fit: cover;
 
       img {
-        width: 130%;
-        left: -5.5rem;
-         position: relative;
-         top: -1rem;
-        z-index: -1;
+        width: 100%;
+       height: 100%;
+       object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px){
+.articleContainer{
+
+  div{
+
+    h2{
+      padding: 0;
+      font-size: 1.5rem;
+    }
+  }
+}
+}
+
+
+@media (max-width: 530px){
+  .articleContainer{
+    div{
+      h1{
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px){
+  .articleContainer{
+    div{
+      h2{
+        font-size: 1rem;
       }
     }
   }

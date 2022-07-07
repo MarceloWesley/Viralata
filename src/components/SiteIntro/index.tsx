@@ -1,5 +1,5 @@
 import styles from './intro.module.scss'
-import {Animated} from '../AnimatedBackground/index'
+import {Animated} from '../SiteIntroSvg/index'
 
 
 export function SiteIntro(){

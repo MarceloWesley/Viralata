@@ -92,3 +92,17 @@
         width: clamp(7rem,52vw,36rem);
     }
 }
+
+
+@media (max-width: 870px){
+    .intro_sec_svg{
+        width: clamp(7rem, 65vw, 36rem);
+    }
+}
+
+@media (max-width: 730px){
+    .intro_sec_svg{
+        width: clamp(7rem, 75vw, 36rem);
+    }
+}
+
