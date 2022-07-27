@@ -1,6 +1,6 @@
 # About
 
-This project is a technical challenge that I made, cloning the page https://viralata.finance/
+This project is a technical challenge that I made to work at Trocafone company, cloning the page https://viralata.finance/
 
 ## Seeing the project
 The project is in vercel, you can find the link in the sidebar.
